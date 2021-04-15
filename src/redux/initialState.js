@@ -14,6 +14,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -23,6 +24,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -32,6 +34,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -41,6 +44,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -50,6 +54,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -59,6 +64,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -68,6 +74,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -77,6 +84,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -86,6 +94,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -95,6 +104,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -104,6 +114,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -113,6 +124,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -122,6 +134,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -131,6 +144,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -140,6 +154,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -149,6 +164,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -158,6 +174,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -167,6 +184,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -176,6 +194,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -185,6 +204,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -194,6 +214,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -203,6 +224,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51117854299_930b09f34c_m.jpg',
       newFurniture: true,
     },
     {
@@ -212,6 +234,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
     {
@@ -221,6 +244,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      image: 'https://live.staticflickr.com/65535/51118594395_b5042360af_m.jpg',
       newFurniture: true,
     },
   ],

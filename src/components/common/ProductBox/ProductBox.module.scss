@@ -4,9 +4,8 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
-  transition:0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 
-  
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
@@ -80,7 +79,7 @@
   }
 
   &:hover {
-    .actions .price> div{
+    .actions .price > div {
       background-color: $primary;
     }
     .buttons {

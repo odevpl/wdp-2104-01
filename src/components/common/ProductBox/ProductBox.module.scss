@@ -4,6 +4,8 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
+  transition:0.25s ease-in-out;
+
 
   .photo {
     position: relative;
@@ -30,6 +32,7 @@
 
     .buttons {
       display: flex;
+      visibility: hidden;
       justify-content: space-between;
     }
   }
@@ -79,5 +82,14 @@
   .oldPrice {
     text-decoration: line-through;
     color: #ffffff;
+
+  &:hover {
+    .actions .price> div{
+      background-color: $primary;
+    }
+    .buttons {
+      visibility: visible;
+    }
   }
+}
 }

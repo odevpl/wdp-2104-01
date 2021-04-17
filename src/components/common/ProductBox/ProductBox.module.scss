@@ -6,7 +6,7 @@
   margin-bottom: 2rem;
   transition:0.25s ease-in-out;
 
-  
+
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
@@ -79,6 +79,10 @@
     align-items: center;
   }
 
+  .oldPrice {
+    text-decoration: line-through;
+    color: #ffffff;
+
   &:hover {
     .actions .price> div{
       background-color: $primary;
@@ -87,4 +91,5 @@
       visibility: visible;
     }
   }
+}
 }

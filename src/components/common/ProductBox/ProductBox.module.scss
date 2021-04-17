@@ -9,14 +9,14 @@
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
+    overflow: hidden;
+    align-items: flex-end;
     background: {
       color: #f4f5f7;
       size: contain;
       position: center;
       repeat: no-repeat;
     }
-    overflow: hidden;
-    align-items: flex-end;
 
     .sale {
       position: absolute;
@@ -78,12 +78,17 @@
     align-items: center;
   }
 
-  &:hover {
-    .actions .price > div {
-      background-color: $primary;
-    }
-    .buttons {
-      visibility: visible;
+  .oldPrice {
+    text-decoration: line-through;
+    color: #ffffff;
+
+    &:hover {
+      .actions .price > div {
+        background-color: $primary;
+      }
+      .buttons {
+        visibility: visible;
+      }
     }
   }
 }

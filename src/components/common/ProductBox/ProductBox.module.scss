@@ -4,20 +4,19 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
-  transition:0.25s ease-in-out;
-
+  transition: 0.25s ease-in-out;
 
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
+    overflow: hidden;
+    align-items: flex-end;
     background: {
       color: #f4f5f7;
       size: contain;
       position: center;
       repeat: no-repeat;
     }
-    overflow: hidden;
-    align-items: flex-end;
 
     .sale {
       position: absolute;
@@ -83,13 +82,13 @@
     text-decoration: line-through;
     color: #ffffff;
 
-  &:hover {
-    .actions .price> div{
-      background-color: $primary;
-    }
-    .buttons {
-      visibility: visible;
+    &:hover {
+      .actions .price > div {
+        background-color: $primary;
+      }
+      .buttons {
+        visibility: visible;
+      }
     }
   }
-}
 }

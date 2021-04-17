@@ -11,7 +11,8 @@
     li {
       display: inline-block;
       line-height: 55px;
-
+      @extend%hover-transition;
+      
       a {
         color: #ffffff;
         font-size: 13px;

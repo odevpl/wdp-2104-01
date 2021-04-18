@@ -31,7 +31,7 @@ export default function reducer(statePart = [], action = {}) {
       );
       const compareLenght = statePart.filter(product => product.compare).length;
 
-      if (compareLenght === maxQuantity) {
+      if (compareLenght === maxQuantity && !statePart[productIndex].compare) {
         return statePart;
       }
 

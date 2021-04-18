@@ -1,13 +1,28 @@
 $base-padding: 24px;
 
-$header-topbar-bg: #434343;
-$header-bg: #363636;
 
-$footer-claim-bg: #2a2a2a;
-$footer-bg: #363636;
-
+// COLORS VARIABLES SHOULD BE USING ONLY IN THIS FILE
 $primary: #d58e32;
 
 $text-color: #2a2a2a;
 
 $form-border-color: #292929;
+
+$darkerGray: #2a2a2a;
+$darkGray:  #363636;
+$lightGray: #434343;
+$white: #ffffff;
+$black: rgb(42, 42, 42);
+$light: #e2e2e2;
+
+$header-topbar-bg: $lightGray;
+$header-bg: $darkGray;
+
+$footer-claim-bg: $darkerGray;
+$footer-bg: $darkGray;
+
+$product-search-hover-icon: $white;
+
+
+
+

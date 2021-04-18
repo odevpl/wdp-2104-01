@@ -1,0 +1,15 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  width: 100%;
+  min-height: 200px;
+  border: 2px solid $primary ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 100px;
+  background-color: #fff;
+  z-index: 2;
+};

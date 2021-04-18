@@ -1,0 +1,51 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border: 2px solid $primary;
+
+  &:hover .cover {
+    visibility: visible;
+  }
+
+  .imageContainer {
+    height: 120px;
+    width: 120px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+
+  .button {
+    color: $primary;
+    font-size: 32px;
+  }
+}

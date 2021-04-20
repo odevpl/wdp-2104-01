@@ -44,6 +44,12 @@
       cursor: pointer;
       margin: 0;
 
+    &:hover {
+      background-color: $primary;
+    }
+
+    &:hover .icon{
+      color: #fff;
       &:hover ul {
         position: absolute;
         display: block;
@@ -109,4 +115,5 @@
   ul {
     display: none;
   }
+}
 }

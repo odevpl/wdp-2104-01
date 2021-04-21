@@ -8,6 +8,7 @@ const Button = ({
   variant,
   noHover,
   active,
+  favorite,
   className: propClassName,
   ...props
 }) => {
@@ -19,6 +20,7 @@ const Button = ({
   else classes.push('main');
 
   if (active) classes.push(styles.active);
+  if (favorite) classes.push(styles.favorite);
   let Comp = 'a';
 
   if (noHover) {
@@ -39,6 +41,7 @@ Button.propTypes = {
   className: PropTypes.string,
   variant: PropTypes.string,
   active: PropTypes.bool,
+  favorite: PropTypes.bool,
 };
 
 export default Button;

@@ -42,6 +42,8 @@
           display: inline-block;
           margin: 0 0.5rem;
           font-weight: 600;
+          cursor: pointer;
+          user-select: none;
           @extend%hover-transition;
 
           a {
@@ -82,6 +84,7 @@
         li {
           display: inline-block;
           margin-left: 0.5rem;
+          cursor: pointer;
           @extend%hover-transition;
 
           a {
@@ -104,19 +107,29 @@
   .productWrapper {
     @extend .col-3;
   }
+
+  .fadeIn {
+    -webkit-animation: fade-in 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
+    animation: fade-in 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
+  }
+
+  .fadeOut {
+    -webkit-animation: fade-out 0.7s ease-out both;
+    animation: fade-out 0.7s ease-out both;
+  }
 }
 
-@media (max-width: 769px){
-  .productWrapper{
+@media (max-width: 769px) {
+  .productWrapper {
     flex: 0 0 33.333% !important;
     max-width: 33.333% !important;
   }
 
-  .dots{
+  .dots {
     top: 28px !important;
   }
 
-  .wrapper{
+  .wrapper {
     margin-bottom: 40px !important;
   }
 }
@@ -147,5 +160,39 @@
   .productWrapper {
     flex: 0 0 50% !important;
     max-width: 50% !important;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

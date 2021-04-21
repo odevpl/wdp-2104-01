@@ -44,12 +44,6 @@
       cursor: pointer;
       margin: 0;
 
-    &:hover {
-      background-color: $primary;
-    }
-
-    &:hover .icon{
-      color: #fff;
       &:hover ul {
         position: absolute;
         display: block;
@@ -104,16 +98,3 @@
   }
 }
 
-.dropdown {
-  list-style-type: none;
-  -webkit-appearance: none;
-  border: 0;
-  background-color: transparent;
-  padding: 5px 30px 5px 35px;
-  position: relative;
-  z-index: 1;
-  ul {
-    display: none;
-  }
-}
-}

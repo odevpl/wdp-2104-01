@@ -14,12 +14,17 @@ const createActionName = name => `app/${reducerName}/${name}`;
 
 //action types
 export const COMPARING_ADD_REMOVE = createActionName('COMPARING_ADD_REMOVE');
+const ADD_FAVORITE = createActionName('ADD_FAVORITE');
+const REMOVE_FAVORITE = createActionName('REMOVE_FAVORITE');
 
 //action creators
 export const comparingAddRemove = productId => ({
   payload: { productId },
   type: COMPARING_ADD_REMOVE,
 });
+
+export const addFavorite = payload => ({ payload, type: ADD_FAVORITE });
+export const removeFavorite = payload => ({ payload, type: REMOVE_FAVORITE });
 
 /* reducer */
 export default function reducer(statePart = [], action = {}) {
@@ -40,6 +45,22 @@ export default function reducer(statePart = [], action = {}) {
         compare: !statePart[productIndex].compare,
       };
       return [...statePart];
+    }
+    case ADD_FAVORITE: {
+      return statePart.map(product => {
+        if (product.id === action.payload) {
+          product.favorite = true;
+        }
+        return product;
+      });
+    }
+    case REMOVE_FAVORITE: {
+      return statePart.map(product => {
+        if (product.id === action.payload) {
+          product.favorite = false;
+        }
+        return product;
+      });
     }
     default:
       return statePart;

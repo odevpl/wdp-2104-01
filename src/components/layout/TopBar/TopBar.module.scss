@@ -12,7 +12,7 @@
       display: inline-block;
       line-height: 55px;
       @extend%hover-transition;
-      
+
       a {
         color: #ffffff;
         font-size: 13px;
@@ -39,5 +39,11 @@
     .icon {
       margin-right: 5px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .topMenu a span {
+    display: none;
   }
 }

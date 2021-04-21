@@ -7,6 +7,10 @@
     height: 145px;
   }
 
+  .logo {
+    order: 2;
+  }
+
   .phoneNumber {
     p {
       margin: 0;
@@ -14,6 +18,9 @@
       line-height: 42px;
       color: rgb(216, 216, 216);
       font-weight: 500;
+      @media (max-width: 768px) {
+        line-height: 24px;
+      }
 
       .icon {
         font-size: 32px;
@@ -21,11 +28,14 @@
         vertical-align: middle;
         margin-top: -3px;
         margin-right: 0.8rem;
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
       }
     }
   }
-
   .cart {
+    order: 3;
     .cartBox {
       display: inline-block;
       position: relative;
@@ -69,6 +79,32 @@
           background-color: lighten($primary, 10%);
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    flex-grow: 2;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 35%;
+    top: 18px;
+  }
+
+  .cart {
+    order: 3;
+    min-width: 34%;
+    top: 14px;
+  }
+
+  .phoneNumber {
+    text-align: right !important;
+    min-width: 34%;
+    order: 4;
+    span {
+      font-size: 14px;
     }
   }
 }

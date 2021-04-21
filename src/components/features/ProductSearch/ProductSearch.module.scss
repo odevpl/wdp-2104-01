@@ -1,24 +1,20 @@
 @import "../../../styles/settings.scss";
-
 .root {
   border: 1px solid $form-border-color;
   display: inline-flex;
   height: 45px;
   color: $text-color;
-
   .category {
     border-right: 1px solid $form-border-color;
     display: flex;
     align-items: center;
     position: relative;
-
     .icon:first-child {
       color: $primary;
       position: absolute;
       left: 10px;
       z-index: 0;
     }
-
     .icon:last-child {
       position: absolute;
       right: 10px;
@@ -27,7 +23,6 @@
     &:hover {
       background-color: $primary;
     }
-
     &:hover .icon {
       color: #fff;
     }
@@ -43,58 +38,66 @@
       list-style-type: none;
       cursor: pointer;
       margin: 0;
-
-      &:hover ul {
-        position: absolute;
-        display: block;
+      &:hover {
+        background-color: $primary;
       }
-
-      ul {
-        display: none;
-        width: calc(100% - 35px);
-        padding: 0;
-        text-align: right;
-        padding-top: 10px;
-
+      &:hover .icon {
+        color: #fff;
+        &:hover ul {
+          position: absolute;
+          display: block;
+        }
+        ul {
+          display: none;
+          width: calc(100% - 35px);
+          padding: 0;
+          text-align: right;
+          padding-top: 10px;
+          li {
+            padding: 4px 0;
+            padding-right: 4px;
+          }
+          li:hover {
+            background: $primary;
+            transition: all 0.5s;
+          }
+        }
         li {
-          padding: 4px 0;
-          padding-right: 4px;
-        }
-
-        li:hover {
-          background: $primary;
-          transition: all 0.5s;
+          display: block;
+          user-select: none;
         }
       }
-
-      li {
-        display: block;
-        user-select: none;
+    }
+    .searchField {
+      display: flex;
+      align-items: center;
+      position: relative;
+      input {
+        border: 0;
+        padding-left: 10px;
+        font-size: 14px;
+        outline: none;
+        &::placeholder {
+          color: $text-color;
+        }
+      }
+      button {
+        border: 0;
+        background-color: transparent;
+        outline: none;
       }
     }
   }
-
-  .searchField {
-    display: flex;
-    align-items: center;
+  .dropdown {
+    list-style-type: none;
+    -webkit-appearance: none;
+    border: 0;
+    background-color: transparent;
+    padding: 5px 30px 5px 35px;
     position: relative;
-
-    input {
-      border: 0;
-      padding-left: 10px;
-      font-size: 14px;
-      outline: none;
-
-      &::placeholder {
-        color: $text-color;
-      }
-    }
-
-    button {
-      border: 0;
-      background-color: transparent;
-      outline: none;
+    z-index: 1;
+    ul {
+      display: none;
     }
   }
 }
-

@@ -81,4 +81,23 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    .footerMenu {
+      .menuWrapper {
+        min-width: 161px;
+        max-width: 162px;
+      }
+      img {
+          max-width: 90%;
+        }
+    }
+  }
+  @media (max-width: 380px) {
+    .footerMenu {
+      .menuWrapper {
+        text-align: center;
+        margin: auto;
+      }
+  }
+}
 }

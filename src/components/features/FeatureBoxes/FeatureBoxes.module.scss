@@ -7,3 +7,24 @@
 a:hover {
   text-decoration: none;
 }
+
+@media (max-width: 767px) {
+  .root {
+    padding: 0;
+  }
+  .serviceCard {
+    flex-basis: 50%;
+    padding-left: 5px;
+  }  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .root {
+    padding: 0;
+    margin-right: 30px;
+  }
+  .serviceCard {
+    flex-basis: 50%;
+    padding-left: 30px;
+  }  
+}

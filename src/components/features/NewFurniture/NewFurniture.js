@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -9,19 +10,32 @@ class NewFurniture extends React.Component {
   state = {
     activePage: 0,
     activeCategory: 'bed',
+    activePageStyle: styles.fadeIn,
   };
 
   handlePageChange(newPage) {
-    this.setState({ activePage: newPage });
+    this.setState({ activePageStyle: styles.fadeOut });
+    setTimeout(() => {
+      this.setState({ activePage: newPage });
+    }, 700);
+    setTimeout(() => {
+      this.setState({ activePageStyle: styles.fadeIn });
+    }, 700);
   }
 
   handleCategoryChange(newCategory) {
-    this.setState({ activeCategory: newCategory });
+    this.setState({ activePageStyle: styles.fadeOut });
+    setTimeout(() => {
+      this.setState({ activeCategory: newCategory });
+    }, 700);
+    setTimeout(() => {
+      this.setState({ activePageStyle: styles.fadeIn });
+    }, 700);
   }
 
   render() {
     const { categories, products } = this.props;
-    const { activeCategory, activePage } = this.state;
+    const { activeCategory, activePage, activePageStyle } = this.state;
 
     const categoryProducts = products.filter(item => item.category === activeCategory);
     const pagesCount = Math.ceil(categoryProducts.length / 8);
@@ -73,7 +87,7 @@ class NewFurniture extends React.Component {
             activeItem={this.state.activePage}
             swipeAction={this.handlePageChange.bind(this)}
           >
-            <div className='row'>
+            <div className={'row ' + activePageStyle}>
               {categoryProducts
                 .slice(activePage * 8, (activePage + 1) * 8)
                 .map(item => (
@@ -106,6 +120,7 @@ NewFurniture.propTypes = {
       stars: PropTypes.number,
       promo: PropTypes.string,
       newFurniture: PropTypes.bool,
+      favorite: PropTypes.bool,
     })
   ),
 };

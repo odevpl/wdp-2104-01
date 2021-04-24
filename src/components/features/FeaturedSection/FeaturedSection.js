@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import HotDealProductBox from '../HotDealProductBox/HotDealProductBoxContainer';
 // import {Swipe, Position} from 'react-swipe-component';
 
-const FeaturedSection = () => {
+const FeaturedSection = hotDeals => {
   return (
     <div className={styles.root}>
       <div className='container'>
         <div className='row'>
           <div className={'col ' + styles.hotDeals}>
-            <HotDealProductBox />
+            <HotDealProductBox {...hotDeals.hotDeals} />
           </div>
           <div className={'col ' + styles.slide}>
             <div className={styles.slider}>

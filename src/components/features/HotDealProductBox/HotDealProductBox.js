@@ -8,6 +8,7 @@ import {
   faExchangeAlt,
   faEye,
   faCircle,
+  faCartPlus,
 } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar, faHeart } from '@fortawesome/free-regular-svg-icons';
 import Button from '../../common/Button/Button';
@@ -26,7 +27,6 @@ const HotDealProductBox = ({
   favorite,
 }) => (
   <div className={styles.root}>
-    {console.log(oldPrice)}
     <div className={'row ' + styles.topBar}>
       <div className={'col ' + styles.text}>HOT DEALS</div>
       <div className={'col ' + styles.dots}>
@@ -36,9 +36,27 @@ const HotDealProductBox = ({
       </div>
     </div>
     <div className={styles.photo}>
+      <div className={styles.addToCart}>
+        <a>
+          <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
+          ADD TO CART
+        </a>
+      </div>
+      <div className={'row ' + styles.counter}>
+        <div className={'col ' + styles.counterElem}>
+          <b>25</b> DAYS
+        </div>
+        <div className={'col ' + styles.counterElem}>
+          <b>10</b> HRS
+        </div>
+        <div className={'col ' + styles.counterElem}>
+          <b>23</b> MINS
+        </div>
+        <div className={'col ' + styles.counterElem}>
+          <b>30</b> SECS
+        </div>
+      </div>
       <img src={image} alt={name} className={styles.img} />
-      {/* <img src={'https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'} alt={name} className={styles.img} /> */}
-      {promo && <div className={styles.sale}>{promo}</div>}
       <div className={styles.buttons}></div>
     </div>
     <div className={styles.content}>
@@ -110,6 +128,7 @@ const HotDealProductBox = ({
 );
 
 HotDealProductBox.propTypes = {
+  hotDeals: PropTypes.node,
   children: PropTypes.node,
   name: PropTypes.string,
   price: PropTypes.number,

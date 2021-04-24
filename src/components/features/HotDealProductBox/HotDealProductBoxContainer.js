@@ -1,15 +1,18 @@
 import { connect } from 'react-redux';
 import HotDealProductBox from './HotDealProductBox';
+
 import {
-  getAll,
   comparingAddRemove,
   removeFavorite,
   addFavorite,
 } from '../../../redux/productsRedux';
 
-const mapStateToProps = state => ({
-  hotDeals: getAll(state),
-});
+const mapStateToProps = state => {
+  console.log(state.hotDeals);
+  return {
+    hotDeals: state.hotDeals,
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
   comparingAddRemove: productId => dispatch(comparingAddRemove(productId)),

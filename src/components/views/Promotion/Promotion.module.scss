@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  .image {
+    position: relative;
+    height: 400px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: $promotion-layer;
+      opacity: 0.5;
+      width: 85%;
+      height: 85%;
+    }
+
+    &.small {
+      height: 185px;
+    }
+  }
+}

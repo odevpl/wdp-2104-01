@@ -5,17 +5,21 @@ import HotDealProductBox from '../HotDealProductBox/HotDealProductBoxContainer';
 import Swipeable from '../../common/Swipeable/Swipeable';
 
 const FeaturedSection = hotDeals => {
-  let indexOfItem = 2;
-  const activeItem = hotDeals.hotDeals[indexOfItem];
-  const increment = indexOfItem++;
+  const state = {
+    activeItem: 0,
+  };
+
+  const pagesCount = 3;
+
+  const dots = [];
 
   return (
     <div className={styles.root}>
       <div className='container'>
         <div className='row'>
           <div className={'col ' + styles.hotDeals}>
-            <Swipeable className='swipe' onSwipedRight={increment}>
-              <HotDealProductBox {...activeItem} />
+            <Swipeable className='swipe' itemsCount={3}>
+              <HotDealProductBox {...hotDeals.hotDeals[state.activeItem]} />
             </Swipeable>
           </div>
           <div className={'col ' + styles.slide}>
@@ -62,6 +66,7 @@ const FeaturedSection = hotDeals => {
 
 FeaturedSection.defaultProps = {
   hotDeals: [],
+  state: [],
 };
 
 export default FeaturedSection;

@@ -5,15 +5,16 @@ import HotDealProductBox from '../HotDealProductBox/HotDealProductBoxContainer';
 import Swipeable from '../../common/Swipeable/Swipeable';
 
 const FeaturedSection = hotDeals => {
-  const indexOfItem = 1;
+  let indexOfItem = 2;
   const activeItem = hotDeals.hotDeals[indexOfItem];
+  const increment = indexOfItem++;
 
   return (
     <div className={styles.root}>
       <div className='container'>
         <div className='row'>
           <div className={'col ' + styles.hotDeals}>
-            <Swipeable className='swipe' onSwipeLeft={indexOfItem}>
+            <Swipeable className='swipe' onSwipedRight={increment}>
               <HotDealProductBox {...activeItem} />
             </Swipeable>
           </div>

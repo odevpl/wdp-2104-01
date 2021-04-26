@@ -9274,6 +9274,13 @@
   optionalDependencies:
     "fsevents" "2.0.7"
 
+"react-swipe-component@^3.0.0":
+  "integrity" "sha512-iE8qw7OHg2cMWmurWJC/EFj6LgB70AA+eRTbP4NZfdEF2qRVaC03cK2PxcfuB/lwz56slIntjFRwcYFAoYIrbQ=="
+  "resolved" "https://registry.npmjs.org/react-swipe-component/-/react-swipe-component-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "react" "^16.8.1"
+
 "react-swipeable@^6.1.0":
   "integrity" "sha512-vB6+bv1I5L9nfuM7quu41o/kK1f3a7cTQ3NHNWkOltg5uhBpnH6xvkQJeoPfKQ6K4pnifELXY65wzWwWBa+zGg=="
   "resolved" "https://registry.npmjs.org/react-swipeable/-/react-swipeable-6.1.0.tgz"
@@ -9289,7 +9296,7 @@
     "react-is" "^16.9.0"
     "scheduler" "^0.15.0"
 
-"react@^0.14 || ^15.0.0 || ^16.0.0-alpha", "react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^16.0.0", "react@^16.0.0-0", "react@^16.8.3", "react@^16.8.3 || ^17", "react@^16.9.0", "react@>=15", "react@0.13.x || 0.14.x || ^15.0.0-0 || ^16.0.0-0", "react@16.x":
+"react@^0.14 || ^15.0.0 || ^16.0.0-alpha", "react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^16.0.0", "react@^16.0.0-0", "react@^16.8.1", "react@^16.8.3", "react@^16.8.3 || ^17", "react@^16.9.0", "react@>=15", "react@0.13.x || 0.14.x || ^15.0.0-0 || ^16.0.0-0", "react@16.x":
   "integrity" "sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.9.0.tgz"
   "version" "16.9.0"

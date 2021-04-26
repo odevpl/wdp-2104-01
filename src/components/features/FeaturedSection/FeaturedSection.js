@@ -2,15 +2,20 @@ import React from 'react';
 import styles from './FeaturedSection.module.scss';
 import PropTypes from 'prop-types';
 import HotDealProductBox from '../HotDealProductBox/HotDealProductBoxContainer';
-// import {Swipe, Position} from 'react-swipe-component';
+import Swipeable from '../../common/Swipeable/Swipeable';
 
 const FeaturedSection = hotDeals => {
+  const indexOfItem = 1;
+  const activeItem = hotDeals.hotDeals[indexOfItem];
+
   return (
     <div className={styles.root}>
       <div className='container'>
         <div className='row'>
           <div className={'col ' + styles.hotDeals}>
-            <HotDealProductBox {...hotDeals.hotDeals} />
+            <Swipeable className='swipe' onSwipeLeft={indexOfItem}>
+              <HotDealProductBox {...activeItem} />
+            </Swipeable>
           </div>
           <div className={'col ' + styles.slide}>
             <div className={styles.slider}>
@@ -40,9 +45,19 @@ const FeaturedSection = hotDeals => {
   );
 };
 
-// FeaturedSection.PropTypes = {
-//   hotDeals: PropTypes.node,
-// };
+// hotDeals.hotDealsPropTypes.arrayOf(
+//   PropTypes.shape({
+//     id: PropTypes.string,
+//     name: PropTypes.string,
+//     category: PropTypes.string,
+//     price: PropTypes.number,
+//     stars: PropTypes.number,
+//     promo: PropTypes.string,
+//     newFurniture: PropTypes.bool,
+//     favorite: PropTypes.bool,
+//     hotDeals: PropTypes.node,
+//   })
+// );
 
 FeaturedSection.defaultProps = {
   hotDeals: [],

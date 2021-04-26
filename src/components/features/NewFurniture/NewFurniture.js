@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -34,11 +33,21 @@ class NewFurniture extends React.Component {
   }
 
   render() {
-    const { categories, products } = this.props;
+    const { categories, products, windowWidth } = this.props;
     const { activeCategory, activePage, activePageStyle } = this.state;
 
     const categoryProducts = products.filter(item => item.category === activeCategory);
-    const pagesCount = Math.ceil(categoryProducts.length / 8);
+    const pagesCount = Math.ceil(
+      windowWidth > 768
+        ? categoryProducts.length / 8
+        : windowWidth > 425
+        ? categoryProducts.length / 3
+        : categoryProducts.length / 2
+    );
+
+    const desktopCards = categoryProducts.slice(activePage * 8, (activePage + 1) * 8);
+    const tabletCards = categoryProducts.slice(activePage * 3, (activePage + 1) * 3);
+    const mobileCards = categoryProducts.slice(activePage * 2, (activePage + 1) * 2);
 
     const dots = [];
     for (let i = 0; i < pagesCount; i++) {
@@ -97,6 +106,18 @@ class NewFurniture extends React.Component {
                 ))}
             </div>
           </Swipeable>
+          <div className={'row ' + activePageStyle}>
+            {(windowWidth > 768
+              ? desktopCards
+              : windowWidth > 425
+              ? tabletCards
+              : mobileCards
+            ).map(item => (
+              <div key={item.id} className={styles.productWrapper}>
+                <ProductBox {...item} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     );
@@ -123,6 +144,7 @@ NewFurniture.propTypes = {
       favorite: PropTypes.bool,
     })
   ),
+  windowWidth: PropTypes.number,
 };
 
 NewFurniture.defaultProps = {

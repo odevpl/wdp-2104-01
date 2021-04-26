@@ -91,6 +91,12 @@
           max-width: 90%;
         }
     }
+    .bottomBar {
+      .bottomBarEmpty {
+        min-width: 90%;
+        text-align: center;
+      }
+    }
   }
   @media (max-width: 380px) {
     .footerMenu {

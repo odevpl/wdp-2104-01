@@ -6,20 +6,26 @@ import Swipeable from '../../common/Swipeable/Swipeable';
 
 const FeaturedSection = hotDeals => {
   const state = {
-    activeItem: 0,
+    activeItem: 1,
+    itemsCount: hotDeals.hotDeals.length,
   };
-
-  const pagesCount = 3;
-
-  const dots = [];
 
   return (
     <div className={styles.root}>
       <div className='container'>
         <div className='row'>
           <div className={'col ' + styles.hotDeals}>
-            <Swipeable className='swipe' itemsCount={3}>
-              <HotDealProductBox {...hotDeals.hotDeals[state.activeItem]} />
+            <Swipeable
+              className='swipe'
+              itemsCount={state.itemsCount}
+              activeItem={state.activeItem}
+            >
+              {hotDeals.hotDeals.map(item => (
+                <div key={item.id}>
+                  <HotDealProductBox {...item} />
+                </div>
+              ))}
+              ;
             </Swipeable>
           </div>
           <div className={'col ' + styles.slide}>

@@ -6,6 +6,20 @@ const initialState = {
     { id: 'table', name: 'Table' },
     { id: 'dining', name: 'Dining' },
   ],
+  hotDeals: {
+    id: 'aenean-ru-bristique-1',
+    name: 'Aenean Ru Bristique 1',
+    category: 'chair',
+    price: 300,
+    oldPrice: 250,
+    stars: 2,
+    promo: 'sale',
+    image:
+      'https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+    newFurniture: true,
+    compare: false,
+    favorite: false,
+  },
   products: [
     {
       id: 'aenean-ru-bristique-1',

@@ -16,6 +16,7 @@ const createActionName = name => `app/${reducerName}/${name}`;
 export const COMPARING_ADD_REMOVE = createActionName('COMPARING_ADD_REMOVE');
 const ADD_FAVORITE = createActionName('ADD_FAVORITE');
 const REMOVE_FAVORITE = createActionName('REMOVE_FAVORITE');
+export const CHANGE_USER_STARS = createActionName('CHANGE_USER_STARS');
 
 //action creators
 export const comparingAddRemove = productId => ({
@@ -25,6 +26,7 @@ export const comparingAddRemove = productId => ({
 
 export const addFavorite = payload => ({ payload, type: ADD_FAVORITE });
 export const removeFavorite = payload => ({ payload, type: REMOVE_FAVORITE });
+export const changeUserStars = payload => ({ payload, type: CHANGE_USER_STARS });
 
 /* reducer */
 export default function reducer(statePart = [], action = {}) {
@@ -61,6 +63,22 @@ export default function reducer(statePart = [], action = {}) {
         }
         return product;
       });
+    }
+    case CHANGE_USER_STARS: {
+      const newState = [...statePart];
+      const productIndex = newState.findIndex(
+        product => product.id === action.payload.id
+      );
+
+      if (
+        newState[productIndex].userStars &&
+        newState[productIndex].userStars === action.payload.star
+      ) {
+        newState[productIndex].userStars = null;
+      } else {
+        newState[productIndex].userStars = action.payload.star;
+      }
+      return newState;
     }
     default:
       return statePart;

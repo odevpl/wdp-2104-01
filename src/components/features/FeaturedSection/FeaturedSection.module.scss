@@ -160,3 +160,9 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 769px) {
+  .hotDeals {
+    display: none;
+  }
+}

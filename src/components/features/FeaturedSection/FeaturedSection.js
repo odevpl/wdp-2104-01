@@ -88,6 +88,7 @@ class FeaturedSection extends React.Component {
                 itemsCount={this.state.itemsCount}
                 activeItem={this.state.activeItem}
                 onClick={() => this.freezeElement()}
+                swipeAction={this.handleElementChangeLeft.bind(this)}
               >
                 <div className={activeElementStyle}>
                   <HotDealProductBox {...this.props.hotDeals[activeElement]} />
@@ -95,7 +96,11 @@ class FeaturedSection extends React.Component {
               </Swipeable>
             </div>
             <div className={'col ' + styles.slide}>
-              <Swipeable>
+              <Swipeable
+                itemsCount={this.itemsCount}
+                activeItem={this.state.activeElementRight}
+                swipeAction={this.handleElementChangeRight.bind(this)}
+              >
                 <div className={styles.slider}>
                   <img
                     className={activeElementRightStyle}
@@ -137,7 +142,7 @@ class FeaturedSection extends React.Component {
 }
 
 FeaturedSection.propTypes = {
-  hotDeals: PropTypes.node,
+  hotDeals: PropTypes.array,
 };
 
 FeaturedSection.defaultProps = {

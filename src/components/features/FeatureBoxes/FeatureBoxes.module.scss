@@ -2,6 +2,11 @@
 
 .root {
   padding: 2rem 0 5rem 0;
+  .serviceCard {
+    padding: 0 12px 0 15px;
+    width: 25%;
+    margin-bottom: -50px;
+  }
 }
 
 a:hover {
@@ -11,20 +16,27 @@ a:hover {
 @media (max-width: 767px) {
   .root {
     padding: 0;
+    margin: 36px 30px 48px 24px;
   }
   .serviceCard {
     flex-basis: 50%;
     padding-left: 5px;
+    margin-top: 24px;
+    width: auto;
   }  
+  .FeatureBox {
+    height: 150px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .root {
     padding: 0;
-    margin-right: 30px;
+    margin: -10px 30px 48px 0;
   }
   .serviceCard {
     flex-basis: 50%;
     padding-left: 30px;
+    margin-top: 18px;
   }  
 }

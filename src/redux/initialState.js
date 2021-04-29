@@ -711,7 +711,7 @@ const initialState = {
     {
       id: 'client-1',
       icon:
-        'https://www.flaticon.com/svg/vstatic/svg/565/565703.svg?token=exp=1616333731~hmac=efc4d87e0dbbcd8b62bfd8383e7ef1dd',
+        'https://www.flaticon.com/svg/vstatic/svg/13/13895.svg?token=exp=1619726645~hmac=f6223ead0d5e35c6d8fd18cbbb2ed601',
       quote:
         'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa',
       image:

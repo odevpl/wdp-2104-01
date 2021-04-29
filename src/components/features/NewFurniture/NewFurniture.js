@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import styles from './NewFurniture.module.scss';
 import ProductBox from '../../common/ProductBox/ProductBoxContainer';
-import Swipeable from '../../common/Swipeable/Swipeable';
 
 class NewFurniture extends React.Component {
   state = {
@@ -91,11 +90,6 @@ class NewFurniture extends React.Component {
             </div>
           </div>
 
-          <Swipeable
-            itemsCount={pagesCount}
-            activeItem={this.state.activePage}
-            swipeAction={this.handlePageChange.bind(this)}
-          >
             <div className={'row ' + activePageStyle}>
               {categoryProducts
                 .slice(activePage * 8, (activePage + 1) * 8)
@@ -105,7 +99,6 @@ class NewFurniture extends React.Component {
                   </div>
                 ))}
             </div>
-          </Swipeable>
           <div className={'row ' + activePageStyle}>
             {(windowWidth > 768
               ? desktopCards

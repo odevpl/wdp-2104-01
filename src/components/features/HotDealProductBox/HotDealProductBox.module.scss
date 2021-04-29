@@ -160,11 +160,17 @@
     justify-content: space-between;
     align-items: center;
   }
-
+  .price {
+    display: flex;
+    font-size: 16px;
+  }
   .oldPrice {
     text-decoration: line-through;
-    color: #ffffff;
-
+    color: #585858;
+    text-align: center;
+    line-height: 32px;
+    padding-right: 10px;
+    display: flex;
     &:hover {
       .actions .price > div {
         background-color: $primary;

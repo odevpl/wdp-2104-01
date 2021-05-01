@@ -4,14 +4,43 @@
 
 .root {
   padding: 2rem 0 0 0;
+  flex-grow: 2;
+  .topBar {
+    background-color: $hot-deals-bg;
+    color: $hot-deals-text;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 500;
+    margin: 0 0;
+    .text {
+      padding: 0 5%;
+      text-align: left;
+     }
+    .dots {
+      text-align: right;
+      font-size: 10px;
+      svg {
+        margin: 0 3px;
+        &:hover {
+          color: $primary;
+        }
+        .active {
+          color: $primary;
+         }
+       }
+     }
+   }
   .hotDeals {
     max-width: 33%;
     max-height: 390px;
+    .inactive {
+      display: none;
+    }
     }
   .slide {
     padding-left: 0;
     width: 66%;
-    max-height: 390px;
+    max-height: 350px;
     .slider {
       position: relative;
       max-height: 390px;
@@ -86,5 +115,54 @@
         }
       }
     }
+  }
+  .fadeIn {
+    -webkit-animation: fade-in 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
+    animation: fade-in 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
+  }
+
+  .fadeOut {
+    -webkit-animation: fade-out 0.7s ease-out both;
+    animation: fade-out 0.7s ease-out both;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .hotDeals {
+    display: none;
   }
 }

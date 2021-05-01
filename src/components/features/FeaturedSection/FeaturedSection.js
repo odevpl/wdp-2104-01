@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './FeaturedSection.module.scss';
 import PropTypes from 'prop-types';
 import HotDealProductBox from '../HotDealProductBox/HotDealProductBoxContainer';
-import Swipeable from '../../common/Swipeable/Swipeable';
+// import Swipeable from '../../common/Swipeable/Swipeable';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
@@ -84,55 +84,55 @@ class FeaturedSection extends React.Component {
                   </FontAwesomeIcon>
                 </div>
               </div>
-              <Swipeable
+              {/* <Swipeable
                 itemsCount={this.state.itemsCount}
                 activeItem={this.state.activeItem}
                 onClick={() => this.freezeElement()}
                 swipeAction={this.handleElementChangeLeft.bind(this)}
-              >
-                <div className={activeElementStyle}>
-                  <HotDealProductBox {...this.props.hotDeals[activeElement]} />
-                </div>
-              </Swipeable>
+              > */}
+              <div className={activeElementStyle}>
+                <HotDealProductBox {...this.props.hotDeals[activeElement]} />
+              </div>
+              {/* </Swipeable> */}
             </div>
             <div className={'col ' + styles.slide}>
-              <Swipeable
+              {/* <Swipeable
                 itemsCount={this.itemsCount}
                 activeItem={this.state.activeElementRight}
                 swipeAction={this.handleElementChangeRight.bind(this)}
-              >
-                <div className={styles.slider}>
-                  <img
-                    className={activeElementRightStyle}
-                    src={this.props.hotDeals[activeElementRight].image}
-                    alt='sofa'
-                  ></img>
-                  <div className={styles.shopNow}></div>
-                  <div className={styles.text}>
-                    <span>
-                      INDOOR <b>FURNITURE</b>
-                    </span>
-                    <span>SAVE UP TO 50% OF ALL FURNITURE</span>
-                  </div>
-                  <div>
-                    <a className={styles.button}>SHOP NOW</a>
-                  </div>
+              > */}
+              <div className={styles.slider}>
+                <img
+                  className={activeElementRightStyle}
+                  src={this.props.hotDeals[activeElementRight].image}
+                  alt='sofa'
+                ></img>
+                <div className={styles.shopNow}></div>
+                <div className={styles.text}>
+                  <span>
+                    INDOOR <b>FURNITURE</b>
+                  </span>
+                  <span>SAVE UP TO 50% OF ALL FURNITURE</span>
                 </div>
-                <div className={'row ' + styles.buttons}>
-                  <div
-                    className={'col ' + styles.buttonLeft}
-                    onClick={() => this.handleElementChangeRight(1)}
-                  >
-                    {'<'}
-                  </div>
-                  <div
-                    className={'col ' + styles.buttonRight}
-                    onClick={() => this.handleElementChangeRight(2)}
-                  >
-                    {'>'}
-                  </div>
+                <div>
+                  <a className={styles.button}>SHOP NOW</a>
                 </div>
-              </Swipeable>
+              </div>
+              <div className={'row ' + styles.buttons}>
+                <div
+                  className={'col ' + styles.buttonLeft}
+                  onClick={() => this.handleElementChangeRight(1)}
+                >
+                  {'<'}
+                </div>
+                <div
+                  className={'col ' + styles.buttonRight}
+                  onClick={() => this.handleElementChangeRight(2)}
+                >
+                  {'>'}
+                </div>
+              </div>
+              {/* </Swipeable> */}
             </div>
           </div>
         </div>

@@ -7,6 +7,7 @@ import NewFurniture from '../../features/NewFurniture/NewFurnitureContainer';
 import CompareBar from '../../features/CompareBar/CompareBarContainer';
 import FeaturedSection from '../../features/FeaturedSection/FeaturedSectionContainer'; 
 import Promotion from '../../views/Promotion/PromotionContainer';
+import Gallery from '../../features/Gallery/GalleryContainer';
 
 const Homepage = () => (
   <div className={styles.root}>
@@ -14,6 +15,7 @@ const Homepage = () => (
     <FeatureBoxes />
     <Promotion />
     <NewFurniture />
+    <Gallery />
     <CompareBar />
   </div>
 );

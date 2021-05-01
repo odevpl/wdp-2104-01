@@ -84,3 +84,50 @@
     }
   }
 }
+
+.dropdown {
+  list-style-type: none;
+  -webkit-appearance: none;
+  border: 0;
+  background-color: transparent;
+  padding: 5px 30px 5px 35px;
+  position: relative;
+  z-index: 1;
+  ul {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .root {
+    .category {
+      visibility: hidden;
+    }
+    input {
+      border: none;
+      margin-top: 8px;
+      margin-right: 10px;
+    }
+    button {
+      border: none;
+      background: none;
+      margin-right: 10px;
+    }
+  } 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .root {
+    margin-left: 70px;
+    input {
+      border: none;
+      text-align: center;
+      padding-top: 8px;
+    }
+    button {
+      border: none;
+      background: none;
+      margin-right: 20px;
+    }
+  }
+} 

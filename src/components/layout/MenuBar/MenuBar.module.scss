@@ -5,6 +5,9 @@
   background-color: #ffffff;
 
   :global(.container) > :global(.row) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     height: 84px;
   }
 

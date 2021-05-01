@@ -105,13 +105,9 @@ const HotDealProductBox = ({
         </Button>
       </div>
       <div className={styles.price}>
+        <div className={styles.oldPrice}>$ {oldPrice}</div>
         <Button noHover variant='small'>
           $ {price}
-        </Button>
-      </div>
-      <div className={styles.oldPrice}>
-        <Button noHover variant='small'>
-          $ {oldPrice}
         </Button>
       </div>
     </div>

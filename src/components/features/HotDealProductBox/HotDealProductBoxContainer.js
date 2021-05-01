@@ -8,7 +8,6 @@ import {
 } from '../../../redux/productsRedux';
 
 const mapStateToProps = state => {
-  console.log(state.hotDeals);
   return {
     hotDeals: state.hotDeals,
   };

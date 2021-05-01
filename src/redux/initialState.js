@@ -743,6 +743,21 @@ const initialState = {
       compare: false,
     },
   ],
+  feedbacks: [
+    {
+      id: 'client-1',
+      icon:
+        'https://www.flaticon.com/svg/vstatic/svg/13/13895.svg?token=exp=1619726645~hmac=f6223ead0d5e35c6d8fd18cbbb2ed601',
+      quote:
+        'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa',
+      image:
+        'https://images.pexels.com/photos/25758/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      name: 'John Smith',
+    },
+  ],
+  cart: {
+    products: [],
+  },
   cart: { products: [] },
   options: {},
   promotion: {

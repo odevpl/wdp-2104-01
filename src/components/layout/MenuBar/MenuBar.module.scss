@@ -60,11 +60,14 @@
     .menu {
       visibility: hidden;
     }
+    .effect3d{
+      display: none;
+    }
+
     .hamburger {
       visibility: visible;
       width: 52px;
       height: 46px;
-      margin-top: 15px;
       margin-left: 15px;
     }
     &:hover {
@@ -74,14 +77,7 @@
         z-index:1;
         background-color: #ffffff;
         border: #ffffff;
-        width: 520px;
         padding-left: 24px;
-      }
-      .hamburger {
-        display: none;
-      }
-      form {
-        display: none;
       }
     }
   }

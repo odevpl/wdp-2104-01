@@ -37,6 +37,7 @@
       position: absolute;
       right: 10px;
       z-index: 0;
+      display: none;
     }
     &:hover {
       background-color: $primary;
@@ -115,12 +116,14 @@
 
 @media (max-width: 767px) {
   .root {
-    .category {
-      visibility: hidden;
+    .category:last-child {
+      display: none;
     }
+    .effect3d {
+      display: none;
+    }   
     input {
       border: none;
-      margin-top: 8px;
       margin-right: 10px;
     }
     button {

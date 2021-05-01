@@ -11,7 +11,7 @@
     width: 200px;
     height: 80px;
     background: transparent;
-    transition: width 2s, height 2s, transform 2s;
+    transition: $animation3d;
     z-index: 99;
   }
   .effect3d:hover {

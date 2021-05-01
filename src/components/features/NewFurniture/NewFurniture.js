@@ -90,7 +90,6 @@ class NewFurniture extends React.Component {
               </div>
             </div>
           </div>
-
           <Swipeable
             itemsCount={pagesCount}
             activeItem={this.state.activePage}

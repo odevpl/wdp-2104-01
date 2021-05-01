@@ -7,7 +7,6 @@ import {
   faStar,
   faExchangeAlt,
   faEye,
-  faCircle,
   faCartPlus,
 } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar, faHeart } from '@fortawesome/free-regular-svg-icons';
@@ -27,14 +26,6 @@ const HotDealProductBox = ({
   favorite,
 }) => (
   <div className={styles.root}>
-    <div className={'row ' + styles.topBar}>
-      <div className={'col ' + styles.text}>HOT DEALS</div>
-      <div className={'col ' + styles.dots}>
-        <FontAwesomeIcon icon={faCircle}>dots</FontAwesomeIcon>
-        <FontAwesomeIcon icon={faCircle}>dots</FontAwesomeIcon>
-        <FontAwesomeIcon icon={faCircle}>dots</FontAwesomeIcon>
-      </div>
-    </div>
     <div className={styles.photo}>
       <div className={styles.addToCart}>
         <a>
@@ -114,13 +105,9 @@ const HotDealProductBox = ({
         </Button>
       </div>
       <div className={styles.price}>
+        <div className={styles.oldPrice}>$ {oldPrice}</div>
         <Button noHover variant='small'>
           $ {price}
-        </Button>
-      </div>
-      <div className={styles.oldPrice}>
-        <Button noHover variant='small'>
-          $ {oldPrice}
         </Button>
       </div>
     </div>

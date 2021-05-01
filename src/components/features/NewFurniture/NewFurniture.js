@@ -90,15 +90,15 @@ class NewFurniture extends React.Component {
             </div>
           </div>
 
-            <div className={'row ' + activePageStyle}>
-              {categoryProducts
-                .slice(activePage * 8, (activePage + 1) * 8)
-                .map(item => (
-                  <div key={item.id} className={styles.productWrapper}>
-                    <ProductBox {...item} />
-                  </div>
-                ))}
-            </div>
+          <div className={'row ' + activePageStyle}>
+            {categoryProducts
+              .slice(activePage * 8, (activePage + 1) * 8)
+              .map(item => (
+                <div key={item.id} className={styles.productWrapper}>
+                  <ProductBox {...item} />
+                </div>
+              ))}
+          </div>
           <div className={'row ' + activePageStyle}>
             {(windowWidth > 768
               ? desktopCards

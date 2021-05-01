@@ -6,20 +6,50 @@ const initialState = {
     { id: 'table', name: 'Table' },
     { id: 'dining', name: 'Dining' },
   ],
-  hotDeals: {
-    id: 'aenean-ru-bristique-1',
-    name: 'Aenean Ru Bristique 1',
-    category: 'chair',
-    price: 300,
-    oldPrice: 250,
-    stars: 2,
-    promo: 'sale',
-    image:
-      'https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
-    newFurniture: true,
-    compare: false,
-    favorite: false,
-  },
+  hotDeals: [
+    {
+      id: 'aenean-ru-bristique-1',
+      name: 'Aenean Ru Bristique 1',
+      category: 'chair',
+      price: 300,
+      oldPrice: 250,
+      stars: 4,
+      promo: 'sale',
+      image:
+        'https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      newFurniture: true,
+      compare: false,
+      favorite: false,
+    },
+    {
+      id: 'aenean-ru-bristique-1',
+      name: 'Aenean Ru Bristique 1',
+      category: 'bed',
+      price: 499,
+      oldPrice: 500,
+      stars: 5,
+      promo: 'sale',
+      image:
+        'https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      newFurniture: true,
+      compare: false,
+      favorite: false,
+    },
+    {
+      id: 'aenean-ru-bristique-7',
+      name: 'Aenean Ru Bristique 7',
+      category: 'bed',
+      price: 30,
+      oldPrice: 55,
+      stars: 4,
+      promo: 'sale',
+      image:
+        'https://images.pexels.com/photos/276534/pexels-photo-276534.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      newFurniture: true,
+      compare: false,
+      favorite: false,
+    },
+  ],
   products: [
     {
       id: 'aenean-ru-bristique-1',
@@ -33,6 +63,7 @@ const initialState = {
       compare: false,
       favorite: false,
       userStars: 3,
+      topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-2',
@@ -320,6 +351,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-26',
@@ -419,6 +451,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-35',
@@ -518,6 +551,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-44',
@@ -617,6 +651,8 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      topSeller: true,
+      ad: true,
     },
     {
       id: 'aenean-ru-bristique-53',
@@ -722,7 +758,19 @@ const initialState = {
   cart: {
     products: [],
   },
+  cart: { products: [] },
   options: {},
+  promotion: {
+    leftImage:
+      'https://images.pexels.com/photos/1090092/pexels-photo-1090092.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    leftDescription: ['Guest room', 'Sofa', '-20%'],
+    rightUpImage:
+      'https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+    rightUpDescription: ['Office', 'chair', 'Collection', '$200.00'],
+    rightDownImage:
+      'https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?cs=srgb&dl=pexels-patryk-kamenczak-775219.jpg&fm=jpg',
+    rightDownDescription: ['Special', 'collection', 'Save up', '45%', 'of furniture'],
+  },
 };
 
 export default initialState;

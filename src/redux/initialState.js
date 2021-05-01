@@ -63,6 +63,7 @@ const initialState = {
       compare: false,
       favorite: false,
       userStars: 3,
+      topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-2',
@@ -350,6 +351,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-26',
@@ -449,6 +451,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-35',
@@ -548,6 +551,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-44',
@@ -647,6 +651,8 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      topSeller: true,
+      ad: true,
     },
     {
       id: 'aenean-ru-bristique-53',
@@ -737,10 +743,19 @@ const initialState = {
       compare: false,
     },
   ],
-  cart: {
-    products: [],
-  },
+  cart: { products: [] },
   options: {},
+  promotion: {
+    leftImage:
+      'https://images.pexels.com/photos/1090092/pexels-photo-1090092.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    leftDescription: ['Guest room', 'Sofa', '-20%'],
+    rightUpImage:
+      'https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+    rightUpDescription: ['Office', 'chair', 'Collection', '$200.00'],
+    rightDownImage:
+      'https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?cs=srgb&dl=pexels-patryk-kamenczak-775219.jpg&fm=jpg',
+    rightDownDescription: ['Special', 'collection', 'Save up', '45%', 'of furniture'],
+  },
 };
 
 export default initialState;

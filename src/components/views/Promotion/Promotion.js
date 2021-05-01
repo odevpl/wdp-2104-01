@@ -33,7 +33,7 @@ class Promotion extends React.Component {
       <div className={styles.root}>
         <div className='container'>
           <div className='row'>
-            <div className='col-6'>
+            <div className='col-12 col-lg-6'>
               <div className={styles.image}>
                 <img src={promotion.leftImage} alt='promotion1' />
                 <div className={styles.description + ' ' + styles.descriptionLeft}>
@@ -44,7 +44,7 @@ class Promotion extends React.Component {
               </div>
             </div>
 
-            <div className='col-6'>
+            <div className='col-12 col-lg-6'>
               <div className={styles.image + ' ' + styles.smaller}>
                 <img src={promotion.rightUpImage} alt='promotion2' />
                 <div className={styles.description + ' ' + styles.descriptionRightUp}>

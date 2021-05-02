@@ -1,0 +1,79 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  padding: ($base-padding * 2) 0;
+  background: $lightGray;
+
+  .title {
+    text-align: center;
+    color: $white;
+    padding: $base-padding / 2;
+  }
+
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    padding: ($base-padding * 2) ($base-padding * 3);
+    max-width: 500px;
+    margin: auto;
+    border-top: 8px solid $primary;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px;
+
+    label {
+      font-weight: bolder;
+    }
+
+    input[type='email'], input[type='password'] {
+      font-weight: bolder;
+      margin-bottom: $base-padding;
+      padding: $base-padding / 3;
+      outline: none;
+      cursor: pointer;
+      border: 2px solid;
+      border-radius: 5px;
+      box-shadow: 0 0 5px;
+
+      &:hover, &:focus {
+        color: $primary;
+        border: 2px solid $primary;
+        box-shadow: 0 0 10px $primary;
+        background: lighten($primary, 40%);
+        @extend %hover-animation;
+      }
+    }
+
+    p {
+      margin-bottom: $base-padding;
+
+      a:hover {
+        color: $primary;
+        text-decoration: none;
+        font-weight: bolder;
+        @extend %hover-animation;
+      }
+    }
+
+    .button {
+      margin: auto;
+      padding: ($base-padding / 2) ($base-padding * 2);
+      background: linear-gradient(lighten($primary, 40%), $primary);
+      color: $black-2;
+      font-weight: bolder;
+      border-radius: 5px;
+      box-shadow: 0 0 10px $lighterGray;
+
+      &:hover {
+        background: linear-gradient($primary, darken($primary, 40%));
+        box-shadow: 0 0 20px darken($primary, 20%);
+        @extend %hover-animation;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 50px darken($lightGray, 60%);
+      @extend %hover-animation;
+    }
+  }
+}

@@ -1,58 +1,47 @@
 @import '../../../styles/settings.scss';
 
 .root {
-  padding: ($base-padding * 2) 0;
-  background: $lightGray;
+  margin-top: 24px;
+  padding-top: 30px;
+  background: $blue;
 
   .title {
     text-align: center;
     color: $white;
-    padding: $base-padding / 2;
+    padding-bottom: 120px;
+    font-size: 56px;
   }
 
   .formWrapper {
     display: flex;
     flex-direction: column;
+    color: $black-2;
     background: $white;
-    padding: ($base-padding * 2) ($base-padding * 3);
+    padding: 20px 20px;
     max-width: 500px;
+    max-height: 400px;
     margin: auto;
     border-top: 8px solid $primary;
     border-radius: 10px;
-    box-shadow: 10px 10px 50px;
+    margin-bottom: 24px;
 
     label {
       font-weight: bolder;
+      margin: 0 20px 0 20px;
     }
 
     input[type='email'], input[type='password'] {
       font-weight: bolder;
-      margin-bottom: $base-padding;
-      padding: $base-padding / 3;
+      padding: 10px;
+      margin: 0 20px 0 20px;
       outline: none;
       cursor: pointer;
       border: 2px solid;
       border-radius: 5px;
-      box-shadow: 0 0 5px;
-
-      &:hover, &:focus {
-        color: $primary;
-        border: 2px solid $primary;
-        box-shadow: 0 0 10px $primary;
-        background: lighten($primary, 40%);
-        @extend %hover-animation;
-      }
     }
 
     p {
-      margin-bottom: $base-padding;
-
-      a:hover {
-        color: $primary;
-        text-decoration: none;
-        font-weight: bolder;
-        @extend %hover-animation;
-      }
+      margin: 0 20px 20px 20px;
     }
 
     .button {
@@ -64,16 +53,6 @@
       border-radius: 5px;
       box-shadow: 0 0 10px $lighterGray;
 
-      &:hover {
-        background: linear-gradient($primary, darken($primary, 40%));
-        box-shadow: 0 0 20px darken($primary, 20%);
-        @extend %hover-animation;
-      }
-    }
-
-    &:hover {
-      box-shadow: 0 0 50px darken($lightGray, 60%);
-      @extend %hover-animation;
     }
   }
 }

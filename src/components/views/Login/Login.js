@@ -6,6 +6,7 @@ const Login = () => (
   <div className={styles.root}>
     <div className='container'>
       <h2 className={styles.title}> autoryzacja i uprawnienia NOWOŚĆ </h2>
+
       <form className={styles.formWrapper}>
         <label htmlFor='email'> Email </label>
         <input type='email' id='email' minLength='6' required />
@@ -13,13 +14,13 @@ const Login = () => (
         <input type='password' id='password' minLength='8' required />
         <p>
           {' '}
-          Forgot password?{' '}
+          Nie pamiętasz hasła?{' '}
           <a href='#' onClick={event => event.preventDefault()}>
-            {' Remind password.'}{' '}
+            {' Przypomnij hasło. '}{' '}
           </a>
         </p>
         <Button className={styles.button} onClick={event => event.preventDefault()}>
-          Sign in
+          Zaloguj się
         </Button>
       </form>
     </div>

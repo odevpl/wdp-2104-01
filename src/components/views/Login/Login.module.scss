@@ -2,9 +2,17 @@
 
 .root {
   margin-top: 24px;
-  padding-top: 30px;
+  padding: 30px 0 70px 0;
   background: $blue;
-
+ 
+   .loginTitle {
+       color: $white;
+       text-align: center;
+       padding-bottom: 10px;
+   }
+   a {
+    color: $blue-3;
+   }
   .title {
     text-align: center;
     color: $white;
@@ -15,15 +23,15 @@
   .formWrapper {
     display: flex;
     flex-direction: column;
+    align-content: center;
     color: $black-2;
     background: $white;
     padding: 20px 20px;
     max-width: 500px;
     max-height: 400px;
     margin: auto;
-    border-top: 8px solid $primary;
+    border-top: 8px solid $primary-3;
     border-radius: 10px;
-    margin-bottom: 24px;
 
     label {
       font-weight: bolder;
@@ -33,7 +41,7 @@
     input[type='email'], input[type='password'] {
       font-weight: bolder;
       padding: 10px;
-      margin: 0 20px 0 20px;
+      margin: 0 20px 10px 20px;
       outline: none;
       cursor: pointer;
       border: 2px solid;
@@ -46,9 +54,9 @@
 
     .button {
       margin: auto;
-      padding: ($base-padding / 2) ($base-padding * 2);
-      background: linear-gradient(lighten($primary, 40%), $primary);
-      color: $black-2;
+      padding: 15px 60px;
+      background: $primary-2;
+      color: $black-3;
       font-weight: bolder;
       border-radius: 5px;
       box-shadow: 0 0 10px $lighterGray;

@@ -6,11 +6,11 @@ const Login = () => (
   <div className={styles.root}>
     <div className='container'>
       <h2 className={styles.title}> autoryzacja i uprawnienia NOWOŚĆ </h2>
-
+      <h3 className={styles.loginTitle}> Logowanie dla pracowników </h3>
       <form className={styles.formWrapper}>
         <label htmlFor='email'> Email </label>
         <input type='email' id='email' minLength='6' required />
-        <label htmlFor='password'> Password </label>
+        <label htmlFor='password'> Hasło </label>
         <input type='password' id='password' minLength='8' required />
         <p>
           {' '}

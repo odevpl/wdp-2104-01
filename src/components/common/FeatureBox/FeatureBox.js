@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import styles from './FeatureBox.module.scss';
 
 const FeatureBox = ({ icon, children }) => (

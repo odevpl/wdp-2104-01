@@ -63,7 +63,7 @@ const initialState = {
       compare: false,
       favorite: false,
       userStars: 3,
-      topSeller: true,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-2',
@@ -76,6 +76,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-3',
@@ -88,6 +89,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-4',
@@ -100,6 +102,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: true,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-5',
@@ -112,6 +115,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-6',
@@ -124,6 +128,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-7',
@@ -136,6 +141,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-8',
@@ -148,6 +154,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-9',
@@ -160,6 +167,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-10',
@@ -172,6 +180,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-11',
@@ -184,6 +193,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-12',
@@ -196,6 +206,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-13',
@@ -208,6 +219,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-14',
@@ -220,6 +232,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-15',
@@ -232,6 +245,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-16',
@@ -244,6 +258,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-17',
@@ -256,6 +271,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-18',
@@ -268,6 +284,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-19',
@@ -280,6 +297,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'featured',
     },
     {
       id: 'aenean-ru-bristique-20',
@@ -292,6 +310,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-21',
@@ -304,6 +323,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-22',
@@ -316,6 +336,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-23',
@@ -328,6 +349,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-24',
@@ -340,6 +362,7 @@ const initialState = {
       newFurniture: true,
       compare: false,
       favorite: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-25',
@@ -351,7 +374,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
-      topSeller: true,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-26',
@@ -363,6 +386,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-27',
@@ -374,6 +398,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-28',
@@ -385,6 +410,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-29',
@@ -396,6 +422,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top seller',
     },
     {
       id: 'aenean-ru-bristique-30',
@@ -407,6 +434,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'sale off',
     },
     {
       id: 'aenean-ru-bristique-31',
@@ -418,6 +446,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'sale off',
     },
     {
       id: 'aenean-ru-bristique-32',
@@ -429,6 +458,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'sale off',
     },
     {
       id: 'aenean-ru-bristique-33',
@@ -440,6 +470,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/53/147482645_d125c7f1f8_n.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'sale off',
     },
     {
       id: 'aenean-ru-bristique-34',
@@ -451,7 +482,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
-      topSeller: true,
+      galleryCategory: 'sale off',
     },
     {
       id: 'aenean-ru-bristique-35',
@@ -463,6 +494,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'sale off',
     },
     {
       id: 'aenean-ru-bristique-36',
@@ -474,6 +506,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'sale off',
     },
     {
       id: 'aenean-ru-bristique-37',
@@ -485,6 +518,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'sale off',
     },
     {
       id: 'aenean-ru-bristique-38',
@@ -496,6 +530,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'sale off',
     },
     {
       id: 'aenean-ru-bristique-39',
@@ -507,6 +542,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-40',
@@ -518,6 +554,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-41',
@@ -529,6 +566,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-42',
@@ -540,6 +578,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/6153/6166441527_35651ce078_w.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-43',
@@ -551,7 +590,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
-      topSeller: true,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-44',
@@ -563,6 +602,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-45',
@@ -574,6 +614,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-46',
@@ -585,6 +626,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-47',
@@ -596,6 +638,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-48',
@@ -607,6 +650,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-49',
@@ -618,6 +662,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-50',
@@ -629,6 +674,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-51',
@@ -640,6 +686,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/2223/2711949914_e8a0af5566_z.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-52',
@@ -651,7 +698,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
-      topSeller: true,
+      galleryCategory: 'top rated',
       ad: true,
     },
     {
@@ -664,6 +711,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-54',
@@ -675,6 +723,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-55',
@@ -686,6 +735,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-56',
@@ -697,6 +747,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-57',
@@ -708,6 +759,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-58',
@@ -719,6 +771,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-59',
@@ -730,6 +783,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
     {
       id: 'aenean-ru-bristique-60',
@@ -741,6 +795,7 @@ const initialState = {
       image: 'https://live.staticflickr.com/943/26921740027_23943d5103_c.jpg',
       newFurniture: true,
       compare: false,
+      galleryCategory: 'top rated',
     },
   ],
   feedbacks: [
@@ -789,6 +844,12 @@ const initialState = {
       'https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?cs=srgb&dl=pexels-patryk-kamenczak-775219.jpg&fm=jpg',
     rightDownDescription: ['Special', 'collection', 'Save up', '45%', 'of furniture'],
   },
+  galleryCategories: [
+    { id: 'featured', name: 'FEATURED' },
+    { id: 'top seller', name: 'TOP SELLER' },
+    { id: 'sale off', name: 'SALE OFF' },
+    { id: 'top rated', name: 'TOP RATED' },
+  ],
 };
 
 export default initialState;

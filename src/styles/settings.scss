@@ -1,4 +1,4 @@
-//Promotion 
+//Promotion
 $base-padding: 60px;
 $padding-2: 10px;
 
@@ -12,6 +12,7 @@ $lightGray: #434343;
 $white: #ffffff;
 $black: rgb(42, 42, 42);
 $light: #e2e2e2;
+$textarea-color: #e7e7e7;
 
 $header-topbar-bg: $lightGray;
 $header-bg: $darkGray;
@@ -23,6 +24,16 @@ $footer-claim-bg: $darkerGray;
 $footer-bg: $darkGray;
 
 $product-search-hover-icon: $white;
+
+
+///CHATBOT STYLES OPTION
+$chat-height: 280px;
+$chat-header-bg: $primary;
+$chat-header-hg: 36px;
+$chat-input-hg: 40px;
+$chat-window-hg: 204px;
+$chat-message-bg: $textarea-color;
+
 
 
 //hover & animation

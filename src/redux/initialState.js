@@ -6,6 +6,93 @@ const initialState = {
     { id: 'table', name: 'Table' },
     { id: 'dining', name: 'Dining' },
   ],
+  brands: [
+    {
+      id: 'marshall-0',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-1',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-2',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-3',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-4',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-5',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-6',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-7',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-8',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-9',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-10',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-11',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-12',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-14',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-15',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-16',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-17',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+  ],
   hotDeals: [
     {
       id: 'aenean-ru-bristique-1',
@@ -775,7 +862,6 @@ const initialState = {
       name: 'MacAlister',
     },
   ],
-  cart: { products: [] },
   cart: { products: [] },
   options: {},
   promotion: {

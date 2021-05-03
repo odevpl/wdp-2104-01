@@ -1,0 +1,16 @@
+@import "../../../styles/settings.scss";
+
+.slider {
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
+  margin: 70px auto;
+  padding: 25px 0;
+  border-top: 2px solid $lightGray;
+  border-bottom: 2px solid $lightGray;
+
+  img {
+    height: 95px;
+    width: 145px;
+  }
+}

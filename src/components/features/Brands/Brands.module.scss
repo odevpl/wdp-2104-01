@@ -1,0 +1,44 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  padding: 3rem 0 5rem 0 ;
+
+  .box {
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.slider {
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
+  margin: 70px auto;
+  padding: 25px 0;
+  border-top: 2px solid $lightGray;
+  border-bottom: 2px solid $lightGray;
+
+  .prev, .next {
+    width: 32px;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    padding-top: 7px;
+
+    p {
+      margin: 28px 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $primary;
+      background: #424040;
+    }
+  }
+
+  img {
+    height: 95px;
+    width: 145px;
+  }
+}

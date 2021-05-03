@@ -6,6 +6,38 @@ const initialState = {
     { id: 'table', name: 'Table' },
     { id: 'dining', name: 'Dining' },
   ],
+  brands: [
+    {
+      id: 'marshall-0',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-1',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-2',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-3',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-4',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: 'marshall-5',
+      image:
+        'https://images.pexels.com/photos/164903/pexels-photo-164903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+  ],
   hotDeals: [
     {
       id: 'aenean-ru-bristique-1',
@@ -775,7 +807,6 @@ const initialState = {
       name: 'MacAlister',
     },
   ],
-  cart: { products: [] },
   cart: { products: [] },
   options: {},
   promotion: {

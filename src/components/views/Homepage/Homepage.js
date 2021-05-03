@@ -6,9 +6,10 @@ import FeatureBoxes from '../../features/FeatureBoxes/FeatureBoxes';
 import NewFurniture from '../../features/NewFurniture/NewFurnitureContainer';
 import CompareBar from '../../features/CompareBar/CompareBarContainer';
 import Feedback from '../../features/Feedback/FeedbackContainer';
-import FeaturedSection from '../../features/FeaturedSection/FeaturedSectionContainer'; 
+import FeaturedSection from '../../features/FeaturedSection/FeaturedSectionContainer';
 import Promotion from '../../views/Promotion/PromotionContainer';
 import Gallery from '../../features/Gallery/GalleryContainer';
+import Brands from '../../features/Brands/BrandsContainer';
 
 const Homepage = () => (
   <div className={styles.root}>
@@ -19,6 +20,7 @@ const Homepage = () => (
     <Feedback />
     <Gallery />
     <CompareBar />
+    <Brands />
   </div>
 );
 

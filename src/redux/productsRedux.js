@@ -54,6 +54,7 @@ export default function reducer(statePart = [], action = {}) {
       return statePart.map(product => {
         if (product.id === action.payload) {
           product.favorite = true;
+          JSON.stringify(localStorage.setItem(product.id, product.favorite));
         }
         return product;
       });
@@ -62,6 +63,7 @@ export default function reducer(statePart = [], action = {}) {
       return statePart.map(product => {
         if (product.id === action.payload) {
           product.favorite = false;
+          localStorage.setItem(product.id, product.favorite);
         }
         return product;
       });

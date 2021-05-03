@@ -8,8 +8,7 @@ export const getNew = ({ products }) =>
 export const compareProducts = ({ products }) =>
   products.filter(product => product.compare === true);
 
-export const getGalleryData = ({ products }) =>
-  products.filter(product => product.topSeller === true);
+export const getGalleryData = ({ products }) => products;
 //action name creator
 const reducerName = 'products';
 const createActionName = name => `app/${reducerName}/${name}`;
